@@ -189,9 +189,31 @@ section {
     display: none;
 }
 
+.faq-lista dd {
+    display: none;
+}
+
+.faq-lista dt::after {
+    content: '↓';
+    margin-left: 10px;
+}
+
+.faq-lista dt.faq-lista-ativo::after {
+    content: '↑';
+}
+
+.faq-lista-ativo {
+    display: block !important;
+}
+
+.faq-lista dd.faq-lista-ativo {
+    display: none;
+    animation: slideDown .5s forwards;
+}
+
 .ativo {
     display: block;
-    animation: mostrar .5s forwards;
+    animation: mostrar .3s forwards;
 }
 
 @keyframes mostrar {
@@ -200,14 +222,22 @@ section {
         transform: translate3d(-30px, 0, 0);
     }
 
-    ;
-
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
 
-    ;
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
 }
 
 @media(max-width: 700px) {
