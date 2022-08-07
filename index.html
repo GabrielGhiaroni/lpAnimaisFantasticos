@@ -9,190 +9,227 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js" defer></script>
+    <script type="module" src="/js/script.js" defer></script>
     <title>Animais Fantásticos</title>
 </head>
 
 <body>
-    <nav class="menu">
-        <ul class="menu-lista">
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="#faq">Faq</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="https://www.linkedin.com/in/gabrielghiaroni/">Desenvolvedor →</a></li>
-        </ul>
-    </nav>
-    <section class="grid-section animais js-scroll" id="animais">
-        <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista">
-            <li>
-                <img src="./img/imagem1.jpg" alt="raposa">
-            </li>
-            <li>
-                <img src="./img/imagem2.jpg" alt="esquilo">
-            </li>
-            <li>
-                <img src="./img/imagem3.jpg" alt="urso">
-            </li>
-            <li>
-                <img src="./img/imagem4.jpg" alt="lobo">
-            </li>
-            <li>
-                <img src="./img/imagem5.jpg" alt="macaco">
-            </li>
-            <li>
-                <img src="./img/imagem6.jpg" alt="leão">
-            </li>
-        </ul>
-        <div class="animais-descricao">
-            <section>
-                <h2>Raposa</h2>
-                <p>
-                    Raposa é um nome popular usado para se referir a diferentes espécies de mamíferos pertencentes à
-                    família Canidae, a mesma dos lobos, coiotes e cachorros.
-                </p>
-                <p>
-                    As raposas chamadas de verdadeiras fazem
-                    parte do gênero Vulpes, entretanto, há animais, popularmente chamados de raposa, em outros gêneros.
-                    A espécie mais conhecida é a raposa-vermelha (Vulpes vulpes).
-                </p>
-                <p>
-                    A coloração e a densidade dos pelos das raposas também variam, estando a pelagem relacionada com o
-                    local em que elas vivem.
-                </p>
-                <p>
-                    Raposas que vivem em áreas mais frias, por exemplo, apresentam uma pelagem mais densa, enquanto as
-                    de áreas mais quentes têm uma pelagem mais fina.
-                </p>
-            </section>
-            <section>
-                <h2>Esquilo</h2>
-                <p>
-                    O esquilo (Sciurus vulgaris) é um mamífero pertencente à família Sciudidae e à ordem rodentia. Sua
-                    família comprende os esquilos arborícolas, terrestres, voadores e as marmotas, entre outros.
-                </p>
-                <p>
-                    Dentre os esquilos arborícolas e terrestres há mais de 230 espécies e no grupo dos esquilos voadores
-                    estão incluídas 43 espécies conhecidas.
-                </p>
-                <p>
-                    O esquilo mais comum, o europeu, possui pelagem avermelhada, cauda longa e tem pelos compridos nas
-                    orelhas.
-                </p>
-            </section>
-            <section>
-                <h2>Urso</h2>
-                <p>
-                    Os ursos são mamíferos membros da família ursidae, junto com os pandas. Com oito espécies em cinco
-                    gêneros (Ursus, Tremarctos, Melursus, Helarctus e Ailuropoda) é uma família pouco diversa.
-                </p>
-                <p>
-                    São eles: Urso de Óculos, Urso Beiçudo, Urso-do-Sol, Urso Negro-Asiático, Urso Negro-Americano, Urso
-                    Polar, Urso Pardo e Urso Panda. São animais sempre grandes e geralmente onívoros, existem em todos
-                    os continentes, exceto na Austrália e Antártida.
-                </p>
-                <p>
-                    É uma família que vive nos mais diversos habitats terrestres, desde as regiões geladas do Hemisfério
-                    Norte, a florestas temperadas, florestas tropicais, montanhas, pastagens e regiões áridas.
-                </p>
-                <p>
-                    Apesar da ocorrência nestas regiões áridas, eles precisam de proximidade com água e são mais
-                    diversos nas regiões temperadas e boreais. A maioria deles é oportunista, ou seja, come o que
-                    encontra disponível, desde frutos a outros animais.
-                </p>
-            </section>
-            <section>
-                <h2>Lobo</h2>
-                <p>
-                    O lobo é uma espécie de mamífero que faz parte da família Canidae, a mesma dos cachorros.
-                    Geralmente, o termo lobo é usado para se referir à espécie Canis lupus, a qual é também conhecida
-                    popularmente como lobo-cinzento.
-                </p>
-                <p>
-                    Animal terrestre que ocupa uma grande variedade de habitats, o lobo ocorre na tundra, em regiões de
-                    floresta, pradarias e até mesmo em paisagens áridas. Anteriormente, a espécie era encontrada na
-                    maior parte do hemisfério norte, entretanto, alterações em seu habitat e perseguição humana fizeram
-                    com que o lobo desaparecesse de algumas áreas.
-                </p>
-                <p>
-                    Os indivíduos machos são maiores que as fêmeas e apresentam comprimento (da ponta do nariz à ponta
-                    da cauda) de 1 m a 1,3 m. As fêmeas possuem entre 0,87 m e 1,17 m de comprimento. A cauda desses
-                    animais pode variar entre 35 e 52 cm de comprimento.
-                </p>
-            </section>
-            <section>
-                <h2>Macaco</h2>
-                <p>
+    <div class="grid-container">
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="#animais">Animais</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a data-modal="abrir">Login</a></li>
+                <li><a href="https://www.linkedin.com/in/gabrielghiaroni/">Desenvolvedor →</a></li>
+            </ul>
+        </nav>
+        <section class="grid-section animais" data-anime="scroll" id="animais">
+            <h1 class="titulo">Animais Fantásticos</h1>
+            <ul class="animais-lista">
+                <li>
+                    <img src="./img/imagem1.jpg" alt="raposa">
+                </li>
+                <li>
+                    <img src="./img/imagem2.jpg" alt="esquilo">
+                </li>
+                <li>
+                    <img src="./img/imagem3.jpg" alt="urso">
+                </li>
+                <li>
+                    <img src="./img/imagem4.jpg" alt="lobo">
+                </li>
+                <li>
+                    <img src="./img/imagem5.jpg" alt="macaco">
+                </li>
+                <li>
+                    <img src="./img/imagem6.jpg" alt="leão">
+                </li>
+            </ul>
+            <div class="animais-descricao">
+                <section>
+                    <h2>Raposa</h2>
+                    <p>
+                        Raposa é um nome popular usado para se referir a diferentes espécies de mamíferos pertencentes à
+                        família Canidae, a mesma dos lobos, coiotes e cachorros.
+                    </p>
+                    <p>
+                        As raposas chamadas de verdadeiras fazem
+                        parte do gênero Vulpes, entretanto, há animais, popularmente chamados de raposa, em outros
+                        gêneros.
+                        A espécie mais conhecida é a raposa-vermelha (Vulpes vulpes).
+                    </p>
+                    <p>
+                        A coloração e a densidade dos pelos das raposas também variam, estando a pelagem relacionada com
+                        o
+                        local em que elas vivem.
+                    </p>
+                    <p>
+                        Raposas que vivem em áreas mais frias, por exemplo, apresentam uma pelagem mais densa, enquanto
+                        as
+                        de áreas mais quentes têm uma pelagem mais fina.
+                    </p>
+                </section>
+                <section>
+                    <h2>Esquilo</h2>
+                    <p>
+                        O esquilo (Sciurus vulgaris) é um mamífero pertencente à família Sciudidae e à ordem rodentia.
+                        Sua
+                        família comprende os esquilos arborícolas, terrestres, voadores e as marmotas, entre outros.
+                    </p>
+                    <p>
+                        Dentre os esquilos arborícolas e terrestres há mais de 230 espécies e no grupo dos esquilos
+                        voadores
+                        estão incluídas 43 espécies conhecidas.
+                    </p>
+                    <p>
+                        O esquilo mais comum, o europeu, possui pelagem avermelhada, cauda longa e tem pelos compridos
+                        nas
+                        orelhas.
+                    </p>
+                </section>
+                <section>
+                    <h2>Urso</h2>
+                    <p>
+                        Os ursos são mamíferos membros da família ursidae, junto com os pandas. Com oito espécies em
+                        cinco
+                        gêneros (Ursus, Tremarctos, Melursus, Helarctus e Ailuropoda) é uma família pouco diversa.
+                    </p>
+                    <p>
+                        São eles: Urso de Óculos, Urso Beiçudo, Urso-do-Sol, Urso Negro-Asiático, Urso Negro-Americano,
+                        Urso
+                        Polar, Urso Pardo e Urso Panda. São animais sempre grandes e geralmente onívoros, existem em
+                        todos
+                        os continentes, exceto na Austrália e Antártida.
+                    </p>
+                    <p>
+                        É uma família que vive nos mais diversos habitats terrestres, desde as regiões geladas do
+                        Hemisfério
+                        Norte, a florestas temperadas, florestas tropicais, montanhas, pastagens e regiões áridas.
+                    </p>
+                    <p>
+                        Apesar da ocorrência nestas regiões áridas, eles precisam de proximidade com água e são mais
+                        diversos nas regiões temperadas e boreais. A maioria deles é oportunista, ou seja, come o que
+                        encontra disponível, desde frutos a outros animais.
+                    </p>
+                </section>
+                <section>
+                    <h2>Lobo</h2>
+                    <p>
+                        O lobo é uma espécie de mamífero que faz parte da família Canidae, a mesma dos cachorros.
+                        Geralmente, o termo lobo é usado para se referir à espécie Canis lupus, a qual é também
+                        conhecida
+                        popularmente como lobo-cinzento.
+                    </p>
+                    <p>
+                        Animal terrestre que ocupa uma grande variedade de habitats, o lobo ocorre na tundra, em regiões
+                        de
+                        floresta, pradarias e até mesmo em paisagens áridas. Anteriormente, a espécie era encontrada na
+                        maior parte do hemisfério norte, entretanto, alterações em seu habitat e perseguição humana
+                        fizeram
+                        com que o lobo desaparecesse de algumas áreas.
+                    </p>
+                    <p>
+                        Os indivíduos machos são maiores que as fêmeas e apresentam comprimento (da ponta do nariz à
+                        ponta
+                        da cauda) de 1 m a 1,3 m. As fêmeas possuem entre 0,87 m e 1,17 m de comprimento. A cauda desses
+                        animais pode variar entre 35 e 52 cm de comprimento.
+                    </p>
+                </section>
+                <section>
+                    <h2>Macaco</h2>
+                    <p>
 
-                    Macacos são animais mamíferos pertencentes à ordem dos primatas. Comumente, o termo macaco é
-                    utilizado para se referir a todos os primatas, entretanto, é mais aceito denominar macaco apenas
-                    alguns representantes dessa ordem. A ordem primata é dividida em duas subordens Strepsirrhini e
-                    Haplorrhini.
-                </p>
-                <p>
-                    Os macacos são animais mamíferos, apresentando, portanto, pelos e glândulas mamárias. Os pelos
-                    recobrem o corpo do animal e apresentam diferentes tonalidades, a depender da espécie que estamos
-                    analisando.
-                </p>
-                <p>
-                    O mico-leão-dourado, por exemplo, possui pelos que variam do dourado ao
-                    vermelho-dourado, enquanto o macaco-aranha-de-cara-preta possui pelagem preta.
-                </p>
-            </section>
-            <section>
-                <h2>Leão</h2>
-                <p>
-                    O leão é um mamífero pertencente à ordem Carnivora e família Felidae, sendo conhecido como “rei das
-                    selvas”. Ele se alimenta de outros animais, como gnus e zebras, e vive em grupos, que apresentam
-                    divisões bem marcadas, sendo o macho responsável pela defesa do grupo e a fêmea pela caça e cuidado
-                    com os filhotes.
-                </p>
-                <p>
-                    Apesar de serem admirados por sua força, atualmente as populações de leões estão em declínio, sendo
-                    a espécie classificada como vulnerável pela IUCN (sigla em inglês para União Internacional para a
-                    Conservação da Natureza).
-                </p>
-                <p>
-                    Segundo maior felino do mundo, o leão perde em tamanho apenas para o tigre. Os leões apresentam de
-                    1,37 a 2 m de tamanho (corpo e cabeça), e sua cauda pode atingir até 100 cm de comprimento. O peso
-                    varia entre 120 e 190 quilos, mas vale destacar que já foram descritos indivíduos com mais de 250
-                    kg. O maior leão já encontrado pesava 272 kg.
-                </p>
-            </section>
+                        Macacos são animais mamíferos pertencentes à ordem dos primatas. Comumente, o termo macaco é
+                        utilizado para se referir a todos os primatas, entretanto, é mais aceito denominar macaco apenas
+                        alguns representantes dessa ordem. A ordem primata é dividida em duas subordens Strepsirrhini e
+                        Haplorrhini.
+                    </p>
+                    <p>
+                        Os macacos são animais mamíferos, apresentando, portanto, pelos e glândulas mamárias. Os pelos
+                        recobrem o corpo do animal e apresentam diferentes tonalidades, a depender da espécie que
+                        estamos
+                        analisando.
+                    </p>
+                    <p>
+                        O mico-leão-dourado, por exemplo, possui pelos que variam do dourado ao
+                        vermelho-dourado, enquanto o macaco-aranha-de-cara-preta possui pelagem preta.
+                    </p>
+                </section>
+                <section>
+                    <h2>Leão</h2>
+                    <p>
+                        O leão é um mamífero pertencente à ordem Carnivora e família Felidae, sendo conhecido como “rei
+                        das
+                        selvas”. Ele se alimenta de outros animais, como gnus e zebras, e vive em grupos, que apresentam
+                        divisões bem marcadas, sendo o macho responsável pela defesa do grupo e a fêmea pela caça e
+                        cuidado
+                        com os filhotes.
+                    </p>
+                    <p>
+                        Apesar de serem admirados por sua força, atualmente as populações de leões estão em declínio,
+                        sendo
+                        a espécie classificada como vulnerável pela IUCN (sigla em inglês para União Internacional para
+                        a
+                        Conservação da Natureza).
+                    </p>
+                    <p>
+                        Segundo maior felino do mundo, o leão perde em tamanho apenas para o tigre. Os leões apresentam
+                        de
+                        1,37 a 2 m de tamanho (corpo e cabeça), e sua cauda pode atingir até 100 cm de comprimento. O
+                        peso
+                        varia entre 120 e 190 quilos, mas vale destacar que já foram descritos indivíduos com mais de
+                        250
+                        kg. O maior leão já encontrado pesava 272 kg.
+                    </p>
+                </section>
+            </div>
+        </section>
+        <section class="grid-section faq" data-anime="scroll" id="faq">
+            <h2 class="titulo">FAQ</h2>
+            <dl class="faq-lista">
+                <dt>Qual a idade dos animais?</dt>
+                <dd>As raposas são animais mamíferos e onívoros, pertencentes à familia Canidade. São vulpídeos de porte
+                    médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                <dt>Qual outra característica possuem?</dt>
+                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos
+                    felídeos.</dd>
+                <dt>Qual a diferença entre eles?</dt>
+                <dd>As raposas são animais mamíferos e onívoros, pertencentes à familia Canidade. São vulpídeos de porte
+                    médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                <dt>Como posso ajudar no combate à extinção destes animais?</dt>
+                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos
+                    felídeos.</dd>
+            </dl>
+        </section>
+        <section class="grid-section contato" data-anime="scroll" id="contato">
+            <h2 class="titulo">Contato</h2>
+            <div class="mapa">
+                <img src="/img/mapa.png" alt="mapa-endereco">
+            </div>
+            <ul class="dados">
+                <li>animaisfantasticos@geo.com</li>
+                <li>+55 (21) 99999-9999</li>
+                <li>Rua Logo Ali Perto, 52</li>
+                <li>Rio de Janeiro - RJ</li>
+            </ul>
+        </section>
+        <footer class="copy">
+            <p>Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <div class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" placeholder="seuemail@exemplo.com">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" placeholder="Sua senha">
+                <button type="submit">Entrar</button>
+            </form>
         </div>
-    </section>
-    <section class="grid-section faq js-scroll" id="faq">
-        <h2 class="titulo">FAQ</h2>
-        <dl class="faq-lista">
-            <dt>Qual a idade dos animais?</dt>
-            <dd>As raposas são animais mamíferos e onívoros, pertencentes à familia Canidade. São vulpídeos de porte
-                médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-            <dt>Qual outra característica possuem?</dt>
-            <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos
-                felídeos.</dd>
-            <dt>Qual a diferença entre eles?</dt>
-            <dd>As raposas são animais mamíferos e onívoros, pertencentes à familia Canidade. São vulpídeos de porte
-                médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-            <dt>Como posso ajudar no combate à extinção destes animais?</dt>
-            <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos
-                felídeos.</dd>
-        </dl>
-    </section>
-    <section class="grid-section contato js-scroll" id="contato">
-        <h2 class="titulo">Contato</h2>
-        <div class="mapa">
-            <img src="/img/mapa.png" alt="mapa-endereco">
-        </div>
-        <ul class="dados">
-            <li>animaisfantasticos@geo.com</li>
-            <li>+55 (21) 99999-9999</li>
-            <li>Rua Logo Ali Perto, 52</li>
-            <li>Rio de Janeiro - RJ</li>
-        </ul>
-    </section>
-    <footer class="copy">
-        <p>Todos os direitos reservados.</p>
-    </footer>
+    </div>
 </body>
 
 </html>
