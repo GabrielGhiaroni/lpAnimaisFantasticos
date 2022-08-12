@@ -3,9 +3,13 @@ import scrollSmooth from './modules/scrollSmooth.js';
 import animacaoScroll from './modules/animacaoScroll.js';
 import faq from './modules/faq.js';
 import initModal from './modules/modal.js';
+import initTooltip from './modules/tooltip.js';
+import initDropdownMenu from './modules/dropdown-menu.js';
 
 navListaAnimais();
 scrollSmooth();
 animacaoScroll();
 faq();
 initModal();
+initTooltip();
+initDropdownMenu();
