@@ -8,7 +8,7 @@ export default function initDropdownMenu() {
     function ativarDropDownMenu(event) {
         event.stopPropagation();
         const ul = this.children[1];
-        ul.classList.add('ativo');
+        ul.classList.toggle('ativo');
         fecharDropDownMenu(ul);
     };
 
