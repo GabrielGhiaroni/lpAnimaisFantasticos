@@ -6,9 +6,10 @@ export default function initDropdownMenu() {
     });
 
     function ativarDropDownMenu(event) {
+        event.preventDefault();
         event.stopPropagation();
         const ul = this.children[1];
-        ul.classList.toggle('ativo');
+        ul.classList.add('ativo');
         fecharDropDownMenu(ul);
     };
 
@@ -18,6 +19,7 @@ export default function initDropdownMenu() {
 
         function handleClickOutside(event) {
             event.stopPropagation();
+            const classListEvent = event.target.classList;
             if (!event.target.classList.contains('ativo')) {
                 element.classList.remove('ativo');
             };

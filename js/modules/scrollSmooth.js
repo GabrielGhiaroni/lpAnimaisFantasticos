@@ -1,5 +1,5 @@
 export default function scrollSmooth() {
-    const linksInternos = document.querySelectorAll('.menu li:not(:last-child)');
+    const linksInternos = document.querySelectorAll('.menu a[data-scroll="smooth"]');
 
     function smoothScroll(event) {
         event.preventDefault();
