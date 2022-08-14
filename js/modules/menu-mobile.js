@@ -19,6 +19,5 @@ export default function initMenuMobile() {
             menuMobile.classList.remove('active');
             btn.classList.remove('active');
         };
-
     };
 };
