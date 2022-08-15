@@ -7,6 +7,7 @@ import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initNumeros from './modules/numeros.js';
+import initHorarioFuncionamento from './modules/horario-funcionamento.js';
 
 navListaAnimais();
 scrollSmooth();
@@ -17,3 +18,4 @@ initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initNumeros();
+initHorarioFuncionamento();
