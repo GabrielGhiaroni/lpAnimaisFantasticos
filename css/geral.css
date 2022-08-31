@@ -281,6 +281,13 @@ section {
     background: #3F4;
 }
 
+.btc-preco {
+    background: #3F4;
+    padding: .2rem .5rem;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
 @media(max-width: 700px) {
     .grid-container {
         grid-template-columns: 1fr;
