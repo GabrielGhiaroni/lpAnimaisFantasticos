@@ -9,6 +9,7 @@ import initMenuMobile from './modules/menu-mobile.js';
 import initHorarioFuncionamento from './modules/horario-funcionamento.js';
 import initFetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
+import SlideNav from './modules/slide.js';
 
 navListaAnimais();
 scrollSmooth();
@@ -21,3 +22,7 @@ initMenuMobile();
 initHorarioFuncionamento();
 initFetchAnimais();
 initFetchBitcoin();
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
